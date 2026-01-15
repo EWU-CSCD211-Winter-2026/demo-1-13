@@ -7,21 +7,26 @@ public class App {
 
    public static void main(String[] args) {
 
-       int a = 0;
+    MySubClass a = new MySubClass();
+    MySubClass b = new MySubClass(3);
+    MySubClass c = new MySubClass(1, 2);
+    System.out.println(a.toString());
 
-       // declare and initialize a list of names
-       String[][] listOfNames = {
-            {"Alice", "Bob", "Charlie", "Dennis"},
-            {"E", "F", "G", "H", "I"}
-       }
+    //    int a = 0;
+
+    //    // declare and initialize a list of names
+    //    String[][] listOfNames = {
+    //         {"Alice", "Bob", "Charlie", "Dennis"},
+    //         {"E", "F", "G", "H", "I"}
+    //    }
         ;
-        Lawyer l = new Lawyer("Alice");
-        System.out.println("Lawyer: " + l);
-        // l.setSalary(0);
-        System.out.println("l's salary: " + l.getSalary());
+        // Lawyer l = new Lawyer("Alice");
+        // System.out.println("Lawyer: " + l);
+        // // l.setSalary(0);
+        // System.out.println("l's salary: " + l.getSalary());
 
-        Marketer m = new Marketer("Bob");
-        System.out.println("m's salary: " + m.getSalary());
+        // Marketer m = new Marketer("Bob");
+        // System.out.println("m's salary: " + m.getSalary());
 
 
        /*
