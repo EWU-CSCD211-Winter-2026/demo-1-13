@@ -1,5 +1,5 @@
 
-package model;
+package other;
 
 public class MyClass extends Object {
 

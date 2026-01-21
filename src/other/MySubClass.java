@@ -1,4 +1,4 @@
-package model;
+package other;
 
 public class MySubClass extends MyClass {
 

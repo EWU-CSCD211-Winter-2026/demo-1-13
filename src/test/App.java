@@ -2,15 +2,16 @@
 package test;
 
 import model.*;
+import other.MySubClass;
 
 public class App {
 
    public static void main(String[] args) {
 
-    MySubClass a = new MySubClass();
-    MySubClass b = new MySubClass(3);
-    MySubClass c = new MySubClass(1, 2);
-    System.out.println(a.toString());
+    // MySubClass a = new MySubClass();
+    // MySubClass b = new MySubClass(3);
+    // MySubClass c = new MySubClass(1, 2);
+    // System.out.println(a.toString());
 
     //    int a = 0;
 
@@ -31,6 +32,8 @@ public class App {
 
        /*
 
+       I tried something and it didn't work. Tried a different method and it worked
+
         Now, I want to print
                 the list of names
         So that the names are one per line
@@ -39,6 +42,7 @@ public class App {
         Bob
         Charlie
         */
+
     //    for (int i = 0; i < listOfNames.length; i++) {
     //        for (int j = 0; j < listOfNames[i].length; j++) {
     //             System.out.print("Name: " + listOfNames[i][j] + " ");
@@ -51,6 +55,17 @@ public class App {
        
 
     //    MyClass c = new MyClass();
+
+    Lawyer l = new Lawyer("Alice");
+    System.out.println("l = " + l.toString());
+    Marketer m = new Marketer("Bob");
+    System.out.println("m = " + m);
+    // l.quit();
+    // l = new Lawyer("Bob");
+
+    // Customer c = new Customer("Charlie");
+    
+
 
    }
 }
