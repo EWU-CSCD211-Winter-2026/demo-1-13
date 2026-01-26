@@ -2,19 +2,28 @@ package model;
 
 /**
 This is an Employee class
-extends Person
  */
-public abstract class Employee extends Person {
+public abstract class Employee {
 
     private String W2;
     private int baseSalary;
+    
+    private Humanoid humanoid;
 
     /**
      * Constructor for Employee
-     * @param name the name of the Employee
      */
-    public Employee(String name) {
-        super(name);
+    public Employee(Human human) {
+        this.humanoid= human;
+        init();
+    }
+
+    public Employee(Robot robot) {
+        this.humanoid = robot;
+        init();
+    }
+
+    public void init() {
         this.W2 = "Taxes";
         this.baseSalary = 100000;
         attendOrientation();
@@ -23,6 +32,10 @@ public abstract class Employee extends Person {
     public abstract void attendOrientation();
 
     public abstract void quit();
+
+    public Humanoid getHumanoid() {
+        return humanoid;
+    }
 
     /**
      * Getter for salary

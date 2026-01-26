@@ -12,8 +12,12 @@ public class Lawyer extends Employee {
      * Constructor for a Lawyer
      * @param name the name of the lawyer
      */
-    public Lawyer(String name) {
-        super(name);
+    public Lawyer(Human human) {
+        super(human);
+    }
+
+    public Lawyer(Robot r) {
+        super(r);
     }
 
     @Override
@@ -40,14 +44,14 @@ public class Lawyer extends Employee {
      * @param person the person being sued
      * @return true if winning the lawsuit, false otherwise
      */
-    public boolean sue(Person person) {
-        System.out.println("Suing " + person);
+    public boolean sue(Human human) {
+        System.out.println("Suing " + human);
         return true;
     }
 
     @Override
     public String toString() {
-        return "Lawyer, Salary = " + getSalary() + ", name = " + getName();
+        return "Lawyer, Salary = " + getSalary() + ", humanoid = " + getHumanoid(); 
     }
     
 }

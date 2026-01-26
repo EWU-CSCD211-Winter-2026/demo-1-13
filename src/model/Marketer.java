@@ -9,8 +9,12 @@ public class Marketer extends Employee {
      * Constructor for Marketer
      * @param name the name of the marketer
      */
-    public Marketer(String name) {
-        super(name);
+    public Marketer(Human human) {
+        super(human);
+    }
+
+    public Marketer(Robot robot) {
+        super(robot);
     }
 
     @Override

@@ -56,10 +56,10 @@ public class App {
 
     //    MyClass c = new MyClass();
 
-    Lawyer l = new Lawyer("Alice");
-    System.out.println("l = " + l.toString());
-    Marketer m = new Marketer("Bob");
-    System.out.println("m = " + m);
+    //Lawyer l = new Lawyer("Alice");
+    //System.out.println("l = " + l.toString());
+    //Marketer m = new Marketer("Bob");
+    //System.out.println("m = " + m);
     // l.quit();
     // l = new Lawyer("Bob");
 
