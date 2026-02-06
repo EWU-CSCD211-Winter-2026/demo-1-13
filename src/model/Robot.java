@@ -24,9 +24,5 @@ public class Robot extends Humanoid {
         return "next word";
     }
 
-    @Override
-    public void toCSV() {
-        // here we actually implement to CSV writing
-    }
 
 }
