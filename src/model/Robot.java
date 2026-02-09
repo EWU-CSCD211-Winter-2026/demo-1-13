@@ -24,5 +24,9 @@ public class Robot extends Humanoid {
         return "next word";
     }
 
+    @Override
+    public String toString() {
+        return "Robot, purpose='" + purpose;
+    }
 
 }
